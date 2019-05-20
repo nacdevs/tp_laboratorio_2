@@ -11,8 +11,8 @@ namespace Entidades_2018
     /// </summary>
     public class Changuito
     {
-        List<Producto> productos;
-        int espacioDisponible;
+        private List<Producto> productos;
+        private int espacioDisponible;
         public enum ETipo
         {
             Dulce, Leche, Snacks, Todos

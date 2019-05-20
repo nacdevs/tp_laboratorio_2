@@ -27,11 +27,9 @@ namespace Entidades_2018
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("DULCE");
-            //sb.AppendLine(this.Mostrar());
+            sb.AppendLine("DULCE");            
             sb.AppendLine((string)this);
-            sb.AppendFormat("CALORIAS : {0}", this.CantidadCalorias);
-            //sb.AppendLine("CALORIAS : {0}", this.CantidadCalorias);
+            sb.AppendFormat("CALORIAS : {0}", this.CantidadCalorias);            
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

@@ -11,7 +11,7 @@ namespace Entidades_2018
     public class Leche : Producto
     {
         public enum ETipo { Entera, Descremada }
-        ETipo tipo;
+        private ETipo tipo;
 
         /// <summary>
         /// Por defecto, TIPO será ENTERA
