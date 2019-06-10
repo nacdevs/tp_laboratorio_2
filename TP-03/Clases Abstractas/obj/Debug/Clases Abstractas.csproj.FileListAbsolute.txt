@@ -1,0 +1,9 @@
+C:\Users\Nest\source\repos\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+C:\Users\Nest\source\repos\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
+C:\Users\Nest\source\repos\Clases Abstractas\bin\Debug\Clases Abstractas.dll
+C:\Users\Nest\source\repos\Clases Abstractas\bin\Debug\Clases Abstractas.pdb
+C:\Users\Nest\source\repos\Clases Abstractas\bin\Debug\Excepciones.dll
+C:\Users\Nest\source\repos\Clases Abstractas\bin\Debug\Excepciones.pdb
+C:\Users\Nest\source\repos\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
+C:\Users\Nest\source\repos\Clases Abstractas\obj\Debug\Clases Abstractas.dll
+C:\Users\Nest\source\repos\Clases Abstractas\obj\Debug\Clases Abstractas.pdb
