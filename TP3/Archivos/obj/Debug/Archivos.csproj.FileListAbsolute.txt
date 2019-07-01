@@ -1,0 +1,15 @@
+C:\Users\Nest\source\repos\Archivos\bin\Debug\Archivos.dll
+C:\Users\Nest\source\repos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.dll
+C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\bin\Debug\Archivos.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\obj\Debug\Archivos.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\bin\Debug\Excepciones.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Archivos\obj\Debug\Archivos.csproj.CopyComplete

@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Numero
+    public class Numero
     {
         private double numero;
 
-        public Numero() {
-            this.numero = 0;
+        public Numero():this(0) {
         }
 
-        public Numero(double numero)
+        public Numero(double numero): this(numero + "")
         {
             
         }
 
         public Numero(string strNumero)
         {
-            
+            SetNumero(strNumero);
         }
-
+        /// <summary>
+        /// Valida numero pasado como string por parametro
+        /// </summary>
+        /// <param name="strNumero"></param>
+        /// <returns>Devuelve el numero pasado como string en double</returns>
         public double ValidarNumero(string strNumero)
         {
             double ret;
@@ -32,13 +35,20 @@ namespace Entidades
             }
             return ret;
         }
-
+        /// <summary>
+        /// Valida y le asigna a la propiedad numero
+        /// </summary>
+        /// <param name="numero"></param>
         public void SetNumero(string numero) {
             this.numero = ValidarNumero(numero);
         }
 
-
-        public string BinarioDecimal(string binario) {
+        /// <summary>
+        /// Pasa el numero binario pasado por parametro como string a decimal
+        /// </summary>
+        /// <param name="binario"></param>
+        /// <returns>Devuelve string del numero decimal</returns>
+        public static string BinarioDecimal(string binario) {
             string ret="Valor invalido";
             int n;
             if(int.TryParse(binario, out n))
@@ -48,8 +58,12 @@ namespace Entidades
                 
             return ret;
         }
-
-        public string DecimalBinario(double numero) {
+        /// <summary>
+        /// Convierte un double decimal a binario
+        /// </summary>
+        /// <param name="numero"></param>
+        /// <returns>Devuelve binario en formato string</returns>
+        public static string DecimalBinario(double numero) {
             string ret;
             int n;
             if (int.TryParse(numero.ToString(), out n))
@@ -63,7 +77,7 @@ namespace Entidades
             return ret;
         }
 
-        public string DecimalBinario(string numero) {
+        public static string DecimalBinario(string numero) {
             string ret="Valor invalido";
             double n;
             if (double.TryParse(numero, out n)) {

@@ -1,6 +1,0 @@
-C:\Users\Nest\source\repos\Archivos\bin\Debug\Archivos.dll
-C:\Users\Nest\source\repos\Archivos\bin\Debug\Archivos.pdb
-C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
-C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
-C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.dll
-C:\Users\Nest\source\repos\Archivos\obj\Debug\Archivos.pdb

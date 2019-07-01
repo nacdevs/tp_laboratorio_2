@@ -1,10 +1,6 @@
-C:\Users\Nest\source\repos\Entidades\bin\Debug\Entidades.exe.config
-C:\Users\Nest\source\repos\Entidades\bin\Debug\Entidades.exe
-C:\Users\Nest\source\repos\Entidades\bin\Debug\Entidades.pdb
-C:\Users\Nest\source\repos\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
-C:\Users\Nest\source\repos\Entidades\obj\Debug\Entidades.FormCalculadora.resources
-C:\Users\Nest\source\repos\Entidades\obj\Debug\Entidades.Properties.Resources.resources
-C:\Users\Nest\source\repos\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
-C:\Users\Nest\source\repos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
-C:\Users\Nest\source\repos\Entidades\obj\Debug\Entidades.exe
-C:\Users\Nest\source\repos\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Nest\source\repos\tp1 redo\Entidades\bin\Debug\Entidades.dll
+C:\Users\Nest\source\repos\tp1 redo\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Nest\source\repos\tp1 redo\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Nest\source\repos\tp1 redo\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Nest\source\repos\tp1 redo\Entidades\obj\Debug\Entidades.dll
+C:\Users\Nest\source\repos\tp1 redo\Entidades\obj\Debug\Entidades.pdb

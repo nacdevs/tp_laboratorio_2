@@ -1,0 +1,12 @@
+C:\Users\Nest\source\repos\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Nest\source\repos\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Nest\source\repos\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\Nest\source\repos\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Nest\source\repos\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Nest\source\repos\Excepciones\obj\Debug\Excepciones.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Excepciones\obj\Debug\Excepciones.pdb
