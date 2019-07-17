@@ -1,0 +1,39 @@
+C:\Users\Nest\source\repos\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+C:\Users\Nest\source\repos\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Clases Instanciables.dll
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Archivos.dll
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Clases Abstractas.dll
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Excepciones.dll
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Archivos.pdb
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Clases Abstractas.pdb
+C:\Users\Nest\source\repos\Clases Instanciables\bin\Debug\Excepciones.pdb
+C:\Users\Nest\source\repos\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
+C:\Users\Nest\source\repos\Clases Instanciables\obj\Debug\Clases Instanciables.dll
+C:\Users\Nest\source\repos\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Clases Instanciables.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Archivos.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Clases Abstractas.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Excepciones.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Archivos.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Clases Abstractas.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\bin\Debug\Excepciones.pdb
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\obj\Debug\Clases Instanciables.dll
+C:\Users\Nest\Documents\UTN\Labo2\TP-03\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Clases Instanciables.dll
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Archivos.dll
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Clases Abstractas.dll
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Excepciones.dll
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Archivos.pdb
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Clases Abstractas.pdb
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\bin\Debug\Excepciones.pdb
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
+C:\Users\Nest\Documents\UTN\Labo2\Recuperatorio TPs\TP3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
