@@ -18,16 +18,27 @@ namespace Clases_Instanciables
         public Universidad.EClases Clase { get => clase; set => clase = value; }
         public Profesor Instructor { get => instructor; set => instructor = value; }
 
+        /// <summary>
+        /// Constructor de instancia
+        /// </summary>
         public Jornada() {
             alumnos = new List<Alumno>();
             instructor = new Profesor();
         }
-
+        /// <summary>
+        /// Constructo de instancia con parametros
+        /// </summary>
+        /// <param name="clase"></param>
+        /// <param name="instructor"></param>
         public Jornada(Universidad.EClases clase, Profesor instructor) {
             this.Clase = clase;
             this.Instructor = instructor;
         }
-        
+        /// <summary>
+        /// Guarda la jornada pasada por parametro como un txt en el escritorio
+        /// </summary>
+        /// <param name="jornada"></param>
+        /// <returns>bool</returns>
         public static bool Guardar(Jornada jornada) {
             Texto txt = new Texto();
             string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -35,6 +46,10 @@ namespace Clases_Instanciables
             return true;
         }
 
+        /// <summary>
+        /// Leer un texto en el escritorio de la maquina, y devuelve un string
+        /// </summary>
+        /// <returns>string</returns>
         public static string Leer() {
             Texto txt = new Texto();
             string data;
@@ -43,41 +58,50 @@ namespace Clases_Instanciables
             return data;
         }
 
+        /// <summary>
+        /// Valida que el alumno no este en la jornada
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator !=(Jornada j, Alumno a) {
-            if (j.alumnos.Contains(a))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return !(j == a);
         }
 
+        /// <summary>
+        /// Valida que el alumno este en la jornada
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator ==(Jornada j, Alumno a)
         {
-            if (j.alumnos.Contains(a))
+            foreach (Alumno alumno in j.alumnos)
             {
-                return true;
+                if (alumno == a)
+                    return true;
             }
-            else {
-                return false;
-            }
+            return false;
         }
 
+        /// <summary>
+        /// Agrega el alumno a la jornada
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
-            if (j.alumnos.Contains(a))
-            {
-                return j;
-            }
-            else {
+            if (j != a)
                 j.alumnos.Add(a);
-                return j;
-
-            }
+            return j;
         }
 
+
+        /// <summary>
+        /// Sobrecarga de ToString para mostrar los datos de la jornada
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();

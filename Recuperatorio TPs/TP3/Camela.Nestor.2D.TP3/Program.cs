@@ -123,6 +123,8 @@ namespace Camela.Nestor._2D.TP3
                 Console.WriteLine(e.Message);
             }
             Console.ReadKey();
+
+          
         }
     }
 }

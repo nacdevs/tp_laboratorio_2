@@ -33,7 +33,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.trackingIDTxtBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.direccionTxtBox = new System.Windows.Forms.TextBox();
@@ -43,6 +42,7 @@
             this.ingresadoListBox = new System.Windows.Forms.ListBox();
             this.enViajeListBox = new System.Windows.Forms.ListBox();
             this.entregadoListBox = new System.Windows.Forms.ListBox();
+            this.trackingIDTxtBox = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -89,13 +89,6 @@
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Paquete";
-            // 
-            // trackingIDTxtBox
-            // 
-            this.trackingIDTxtBox.Location = new System.Drawing.Point(745, 363);
-            this.trackingIDTxtBox.Name = "trackingIDTxtBox";
-            this.trackingIDTxtBox.Size = new System.Drawing.Size(184, 20);
-            this.trackingIDTxtBox.TabIndex = 8;
             // 
             // label6
             // 
@@ -181,11 +174,20 @@
             this.entregadoListBox.Size = new System.Drawing.Size(336, 225);
             this.entregadoListBox.TabIndex = 17;
             // 
+            // trackingIDTxtBox
+            // 
+            this.trackingIDTxtBox.Location = new System.Drawing.Point(745, 365);
+            this.trackingIDTxtBox.Mask = "00.000.000";
+            this.trackingIDTxtBox.Name = "trackingIDTxtBox";
+            this.trackingIDTxtBox.Size = new System.Drawing.Size(184, 20);
+            this.trackingIDTxtBox.TabIndex = 18;
+            // 
             // FrmPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 472);
+            this.Controls.Add(this.trackingIDTxtBox);
             this.Controls.Add(this.entregadoListBox);
             this.Controls.Add(this.enViajeListBox);
             this.Controls.Add(this.ingresadoListBox);
@@ -195,7 +197,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.direccionTxtBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.trackingIDTxtBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -216,7 +217,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox trackingIDTxtBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox direccionTxtBox;
@@ -226,6 +226,7 @@
         private System.Windows.Forms.ListBox ingresadoListBox;
         private System.Windows.Forms.ListBox enViajeListBox;
         private System.Windows.Forms.ListBox entregadoListBox;
+        private System.Windows.Forms.MaskedTextBox trackingIDTxtBox;
     }
 }
 

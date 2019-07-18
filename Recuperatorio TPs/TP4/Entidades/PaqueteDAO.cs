@@ -16,7 +16,11 @@ namespace Entidades
         private static string connectionStr = "Data Source=DESKTOP-L36RL7K; Initial Catalog=correo-sp-2017; Integrated Security=true";
 
 
-
+        /// <summary>
+        /// Guarda los datos del paquete en la base de datos
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool Insertar(Paquete p) {
             conexion = new SqlConnection(connectionStr);
             comando = new SqlCommand();

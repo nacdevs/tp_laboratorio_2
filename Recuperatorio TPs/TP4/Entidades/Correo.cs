@@ -14,12 +14,16 @@ namespace Entidades
         private List<Paquete> paquetes;
 
        public List<Paquete> Paquetes { get => paquetes; set => paquetes = value; }
-
+        /// <summary>
+        /// Constructor de la instancia correo
+        /// </summary>
         public Correo() {
             mockPaquetes = new List<Thread>();
             paquetes = new List<Paquete>();
         }
-
+        /// <summary>
+        /// Finaliza todo los hilos de correo
+        /// </summary>
         public void FinEntregas() {
             foreach (Thread thread in mockPaquetes) {
                 thread.Abort();
@@ -27,7 +31,11 @@ namespace Entidades
         }
 
       
-
+        /// <summary>
+        /// Muestra los datos de los paquetes en la lista 
+        /// </summary>
+        /// <param name="elemento"></param>
+        /// <returns></returns>
         public string MostrarDatos(IMostrar<List<Paquete>> elemento)
         {
             List<Paquete> paquetes = ((Correo)elemento).paquetes;
@@ -39,7 +47,12 @@ namespace Entidades
         }
 
       
-
+        /// <summary>
+        /// Agrega un nuevo paquete al Correo y genera nuevo hilo
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static Correo operator +(Correo c, Paquete p) {
             foreach (Paquete paquete in c.paquetes) {
                 if (paquete == p) {

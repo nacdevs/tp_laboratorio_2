@@ -9,10 +9,19 @@ namespace Clases_Abstractas
     public abstract class Universitario:Persona
     {
         private int legajo;
-
+        /// <summary>
+        /// Constructor de instancia
+        /// </summary>
         public Universitario() {
         }
-
+        /// <summary>
+        /// Constructor de instancia con parametros
+        /// </summary>
+        /// <param name="legajo"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad):base(nombre,apellido,dni, nacionalidad) {
             this.legajo = legajo;
         }
@@ -23,6 +32,10 @@ namespace Clases_Abstractas
             return base.Equals(obj);
         }
 
+        /// <summary>
+        /// Muestra datos del universitario
+        /// </summary>
+        /// <returns></returns>
         protected virtual string MostrarDatos() {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(base.ToString());
@@ -32,6 +45,12 @@ namespace Clases_Abstractas
 
         protected abstract string ParticiparEnClase();
 
+        /// <summary>
+        /// Verifica que dos universitarios sean distintos 
+        /// </summary>
+        /// <param name="pg1"></param>
+        /// <param name="pg2"></param>
+        /// <returns></returns>
         public static bool operator !=(Universitario pg1, Universitario pg2) {
             if (pg1.legajo == pg2.legajo || pg1.DNI == pg2.DNI)
             {
@@ -42,6 +61,12 @@ namespace Clases_Abstractas
             }
         }
 
+        /// <summary>
+        /// Verifica que dos universitarios sean iguales mediante numero de legajo y dni
+        /// </summary>
+        /// <param name="pg1"></param>
+        /// <param name="pg2"></param>
+        /// <returns></returns>
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
             if (pg1.legajo == pg2.legajo || pg1.DNI == pg2.DNI)
