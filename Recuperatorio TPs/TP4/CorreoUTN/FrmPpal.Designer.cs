@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,9 @@
             this.enViajeListBox = new System.Windows.Forms.ListBox();
             this.entregadoListBox = new System.Windows.Forms.ListBox();
             this.trackingIDTxtBox = new System.Windows.Forms.MaskedTextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -167,6 +171,7 @@
             // 
             // entregadoListBox
             // 
+            this.entregadoListBox.ContextMenuStrip = this.contextMenuStrip1;
             this.entregadoListBox.FormattingEnabled = true;
             this.entregadoListBox.HorizontalScrollbar = true;
             this.entregadoListBox.Location = new System.Drawing.Point(699, 63);
@@ -181,6 +186,20 @@
             this.trackingIDTxtBox.Name = "trackingIDTxtBox";
             this.trackingIDTxtBox.Size = new System.Drawing.Size(184, 20);
             this.trackingIDTxtBox.TabIndex = 18;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mostrarToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(116, 26);
+            // 
+            // mostrarToolStripMenuItem
+            // 
+            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarToolStripMenuItem.Text = "Mostrar";
+            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.MostrarToolStripMenuItem_Click);
             // 
             // FrmPpal
             // 
@@ -205,6 +224,7 @@
             this.Name = "FrmPpal";
             this.Text = "Correo UTN por Nestor.Camela.2D";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPpal_FormClosing);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,6 +247,8 @@
         private System.Windows.Forms.ListBox enViajeListBox;
         private System.Windows.Forms.ListBox entregadoListBox;
         private System.Windows.Forms.MaskedTextBox trackingIDTxtBox;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
     }
 }
 

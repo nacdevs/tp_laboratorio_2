@@ -29,6 +29,7 @@ namespace Entidades
             this.direccionEntrega = direccionEntrega;
             this.trackingID = trackingID;
         }
+
         /// <summary>
         /// Simula el ciclo de vida de un paquete pasando por distintos estados
         /// </summary>
@@ -44,23 +45,13 @@ namespace Entidades
                     case EEstado.EnViaje:
                         this.estado = EEstado.Entregado;
                         break;
-
                 }
                 EventArgs args = new EventArgs();
                 InformaEstado(this, args);
             }
-            try
-            {
-                PaqueteDAO.Insertar(this);
-            }
-            catch (SqlException sqle)
-            {
-                throw sqle;
-            }
-
-
-
+            PaqueteDAO.Insertar(this);                
         }
+
         /// <summary>
         /// Muestra los datos de un paquete
         /// </summary>
@@ -68,9 +59,10 @@ namespace Entidades
         /// <returns></returns>
         public string MostrarDatos(IMostrar<Paquete> elemento) {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("\n{0} para {1}", ((Paquete)elemento).trackingID , ((Paquete)elemento).direccionEntrega);
-            return "a";
+            sb.AppendFormat("\n{0} para {1} ({2})", ((Paquete)elemento).trackingID , ((Paquete)elemento).direccionEntrega, ((Paquete)elemento).Estado.ToString());
+            return sb.ToString();
         }
+
         /// <summary>
         /// Sobrecarga de ToString para mostrar datos del paquete
         /// </summary>
@@ -83,6 +75,7 @@ namespace Entidades
             sb.AppendFormat("\n Tracking Id: {0}", this.trackingID);
             return sb.ToString();
         }
+
         /// <summary>
         /// Los paquetes son distintos si el tracking Id es distinto
         /// </summary>
@@ -99,6 +92,7 @@ namespace Entidades
                 return false;
             }
         }
+
         /// <summary>
         /// Los paquetes son iguales si tienen el mismo tracking Id
         /// </summary>

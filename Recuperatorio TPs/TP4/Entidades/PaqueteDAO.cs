@@ -9,12 +9,19 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public static class PaqueteDAO 
+    public static class PaqueteDAO
     {
         private static SqlCommand comando;
         private static SqlConnection conexion;
-        private static string connectionStr = "Data Source=DESKTOP-L36RL7K; Initial Catalog=correo-sp-2017; Integrated Security=true";
+        public static event ExceptionDelegate ExceptionDAO;
 
+
+
+        static PaqueteDAO()
+        {              
+            string connectionStr = "Data Source=DESKTOP-L36RL7K; Initial Catalog=correo-sp-2017; Integrated Security=true";
+            conexion = new SqlConnection(connectionStr);
+        }
 
         /// <summary>
         /// Guarda los datos del paquete en la base de datos
@@ -22,26 +29,28 @@ namespace Entidades
         /// <param name="p"></param>
         /// <returns></returns>
         public static bool Insertar(Paquete p) {
-            conexion = new SqlConnection(connectionStr);
-            comando = new SqlCommand();
-            comando.CommandType = System.Data.CommandType.Text;
+            bool ret = false;
+            comando = new SqlCommand();          
             comando.Connection = conexion;
-            string currentquery = "INSERT INTO dbo.Paquetes (direccionEntrega, trackingID, alumno) VALUES ('" + p.DireccionEntrega + "', '" + p.TrackingID + "', 'Nestor Camela 2D')";
-
-            comando.CommandText = currentquery;
-            conexion.Open();
             try
             {
+                conexion.Open();
+                string currentquery = "INSERT INTO dbo.Paquetes (direccionEntrega, trackingID, alumno) VALUES ('" + p.DireccionEntrega + "', '" + p.TrackingID + "', 'Nestor Camela 2D')";
+                comando = new SqlCommand(currentquery, conexion);
                 comando.ExecuteNonQuery();
+                ret = true;
             }
             catch (SqlException sqle) {
-                throw sqle;
+                ExceptionDAO("Error al insertar en base de datos: ", sqle);
             }
-               
-                
-          
-           
-            return true;
+            finally
+            {
+                if (conexion.State == System.Data.ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }             
+            return ret;
         }
 
     }

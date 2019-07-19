@@ -18,6 +18,10 @@ namespace CorreoUTN
         private List<Paquete> ingresadosList;
         private List<Paquete> enViajeList;
         private List<Paquete> entregadoList;
+
+        /// <summary>
+        /// Constructor del form, inicializa correo y listas 
+        /// </summary>
         public FrmPpal()
         {
             InitializeComponent();
@@ -42,11 +46,17 @@ namespace CorreoUTN
 
         }
 
+        /// <summary>
+        /// Agrega un nuevo paquete a la instancia correo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             Paquete currentPaq = new Paquete(this.direccionTxtBox.Text.ToString(), this.trackingIDTxtBox.Text.ToString());
             currentPaq.Estado = Paquete.EEstado.Ingresado;
             currentPaq.InformaEstado += paq_InformaEstado;
+            PaqueteDAO.ExceptionDAO += new ExceptionDelegate(ErrorSQL);
             try
             {
                 correo = correo + currentPaq;
@@ -54,26 +64,27 @@ namespace CorreoUTN
                 trackingIDTxtBox.Text = "";
                 ActualizarEstados();
             }
-            catch (Exception exception) {
-                if (exception is TrackingIdRepetidoException)
-                {
-                    MessageBox.Show("Pedido Repetido!!\n"+exception.Message);
-                }
-                else {
-                    MessageBox.Show("Exception!!\n"+exception.Message);
-                }
-                
+            catch (TrackingIdRepetidoException exception) {                
+               MessageBox.Show("Pedido Repetido!!\n"+exception.Message);                             
             }
             
            
         }
 
+
+        /// <summary>
+        /// Muestra todos los paquetes en el richTextBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnMostrarTodos_Click(object sender, EventArgs e)
         {
-            this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
-
+            this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo); 
         }
 
+        /// <summary>
+        /// Actualiza los listbox mostrando los paquetes que contienen
+        /// </summary>
         private void ActualizarEstados() {
             foreach (Paquete paq in correo.Paquetes) {
                 switch (paq.Estado) {
@@ -92,7 +103,6 @@ namespace CorreoUTN
                         break;
                 }
             }
-
             ingresadoListBox.DataSource = null;
             ingresadoListBox.DataSource = ingresadosList;
 
@@ -103,6 +113,8 @@ namespace CorreoUTN
             entregadoListBox.DataSource = entregadoList;
 
         }
+
+
 
         private void paq_InformaEstado(object sender, EventArgs e)
         {
@@ -117,21 +129,58 @@ namespace CorreoUTN
             }
         }
 
-        private void MostrarInformacion<T>(IMostrar<T> elemento) {
-            if (elemento != null) {
-                this.mostrarRTxtBox.Text = correo.MostrarDatos((Correo)elemento);
-                string salida = correo.MostrarDatos((Correo)elemento);
-                salida.Guardar("salida.txt");
+
+        /// <summary>
+        /// Muestra la informacion de todos los paquetes y los guarda en un archivo txt
+        /// Muestra un mensaje en caso de no poder guardar
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="elemento"></param>
+        private void MostrarInformacion<T>(IMostrar<T> elemento) {          
+            if (elemento != null)
+            {
+                this.mostrarRTxtBox.Text = elemento.MostrarDatos(elemento);
+                try
+                {
+                    mostrarRTxtBox.Text.Guardar("salida.txt");
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message, "Error al guardar en archivo");
+                }
             }
 
-            
+
         }
 
+        /// <summary>
+        /// Al cerrar el formulario se finalizan todos los hilos 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmPpal_FormClosing(object sender, FormClosingEventArgs e)
         {
             correo.FinEntregas();
         }
 
+        /// <summary>
+        /// Muestra informacion de un paquete en la lista de entregados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.MostrarInformacion<Paquete>((IMostrar<Paquete>)entregadoListBox.SelectedItem);
+        }
 
+        /// <summary>
+        /// Muestra mensaje de error si se lanza una sql exception
+        /// </summary>
+        /// <param name="msj"></param>
+        /// <param name="ex"></param>
+        private void ErrorSQL(string msj, Exception ex)
+        {
+            MessageBox.Show(msj + ex.Message);
+        }
     }
 }

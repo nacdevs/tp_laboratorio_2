@@ -14,6 +14,8 @@ namespace Entidades
         private List<Paquete> paquetes;
 
        public List<Paquete> Paquetes { get => paquetes; set => paquetes = value; }
+
+
         /// <summary>
         /// Constructor de la instancia correo
         /// </summary>
@@ -21,6 +23,7 @@ namespace Entidades
             mockPaquetes = new List<Thread>();
             paquetes = new List<Paquete>();
         }
+
         /// <summary>
         /// Finaliza todo los hilos de correo
         /// </summary>
